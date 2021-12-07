@@ -163,9 +163,11 @@ class SbAccount extends Account
 	    System.out.println("Enter the average amount in your account:");
         double amount = input.nextDouble();
         try {
-            if(amount<=0) {
-                ExceptionFound ex = new ExceptionFound();
+            if(amount<=0 && str.equals("normal")) {
+	    if(str.equals("nri")){
+	    ExceptionFound ex = new ExceptionFound();//custom exception
                 throw ex;
+	    }
             }
         }
         catch(ExceptionFound ex){
