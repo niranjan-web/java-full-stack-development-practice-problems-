@@ -41,6 +41,8 @@ public class InterestCalculator
 			        System.out.println("thanks for using.");  //exit message
 					break;
 				}
+				default:
+					System.out.println("please enter the above mentioned name"); 
 			}break;    //to exit the for loop
 		}
 		//System.out.println("thanks for using.");  //exit message
